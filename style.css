@@ -1,0 +1,328 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+li { list-style: none; }
+  
+a { text-decoration: none; }
+  
+a,
+img,
+span,
+input,
+button,
+ion-icon { display: block; }
+  
+input {
+    font: inherit;
+    width: 100%;
+    border: none;
+  }
+  
+select,
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+html {
+    font-family: var(--ff-poppins);
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    transition: var(--transition-2);
+    z-index: 100;
+    justify-content:center;
+    display:flex;
+    align-items: center;
+    background-image: url('img/rgb.PNG');
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+body {
+font-family: 'Manrope', sans-serif;
+}
+.content{
+display: flex;
+justify-content: space-between; 
+align-items: center;   
+width: 75%;
+}
+.content .logo img{
+width: 100px;
+height: 50px;    
+}
+.content .menu{
+display: flex;    
+align-items: center;
+}
+.content .menu ul{
+display: flex;    
+}
+.content .menu ul li a{
+margin-right: 20px;   
+color: #7a8481; 
+font-weight: 800;
+font-size: 12px;
+}
+.content .menu ul li a:hover{
+color: #37c39c;    
+}
+.content .bts{
+display: flex;    
+}
+.content .bts .wat{
+background: #37c39c;
+border-radius: 4px;    
+height: 40px;
+width: 120px;
+font-family: 'Manrope', sans-serif;
+font-weight: 800;
+font-size: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+}
+.content .bts .wat:hover{
+background: none;
+border: 1px solid #37c39c;   
+color: #37c39c; 
+}
+.content .bts .wat i{
+margin-right: 5px;   
+margin-top: 1px; 
+}
+.content .bts .search{
+width: 40px;
+border-radius: 4px;
+height: 40px;    
+/*border: 1px solid greenyellow;*/
+margin-right: 10px;
+font-family: 'Manrope', sans-serif;
+font-weight: 800;
+font-size: 14px;
+}
+.hero{
+display: grid;
+align-items: center;
+justify-items: center;
+width: 100%;
+height: 600px;
+/*background-image: url('img/background.jpg');*/
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;    
+z-index: 0;
+}
+.sub{
+display: grid;  
+width: 100%;
+height: 100%;
+background: url('img/rgb.png');
+/*background-position: center;
+background-repeat: no-repeat;
+background-size: cover;  */  
+align-items: center;
+justify-items: center;
+z-index: 0;
+}
+.hero-content{
+display: grid;    
+grid-template-columns: 50% 50%;
+/*border: 1px solid #7a8481;*/
+width: 75%;
+height: 500px;
+}
+.hero-content .img{
+position: relative;
+display: grid;
+align-items:center;
+justify-items: right;
+}
+.hero-content .texto{
+display: grid;
+align-items: center;    
+}
+.hero-content .texto .texto-content .herobts{
+display: flex;    
+margin-top: 20px;
+}
+.hero-content .texto .texto-content .herobts #s{
+width: 120px;
+height: 40px;
+background: #37c39c;
+margin-right: 20px;
+font-size: 12px;
+font-weight: 800;
+font-family: 'Manrope', sans-serif;
+color: #fff;
+}
+.hero-content .texto .texto-content .herobts #s:hover{
+border: 1px solid #37c39c;
+background: none;
+color: #37c39c;
+transition: .1s ease-in-out;
+}
+.hero-content .texto .texto-content .herobts #c:hover{
+border: 1px solid #37c39c;
+background: #37c39c;
+color: #fff;
+transition: .1s ease-in-out;
+}
+.hero-content .texto .texto-content .herobts #c{
+width: 120px;
+height: 40px;
+border: 1px solid #37c39c;
+margin-right: 10px;
+font-size: 12px;
+font-weight: 800;
+font-family: 'Manrope', sans-serif;
+color: #37c39c;
+}
+.hero-content .texto .texto-content h2{
+font-size: 26px;
+margin-bottom: 20px;
+font-weight: 900;
+font-family: 'Outfit', sans-serif;
+font-weight: 900;
+}
+.hero-content .texto .texto-content h3{
+font-size: 24px;
+margin-bottom: 20px;
+font-weight: 800;
+font-family: 'Outfit', sans-serif;
+font-weight: 900;
+}
+.hero-content .texto .texto-content p{
+font-size: 14px;
+margin-bottom: 30px;
+font-weight: 600;
+font-family: 'Manrope', sans-serif;
+line-height: 30px;
+color: #7a8481;
+}
+.hero-content .texto .texto-content h6{
+font-size: 12px;
+margin-bottom: 30px;
+font-weight: 300;
+font-family: 'Manrope', sans-serif;
+line-height: 30px;
+color: #7a8481;
+}
+.hero-content .texto .texto-content h3 span{
+color: #37c39c;   
+margin-left: 10px;     
+}
+.img-box{
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+
+  clip-path: polygon(
+      0 0,
+      80% 0,
+      100% 20%,
+      100% 100%,
+      0 100%
+  );
+}
+
+.img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about{
+display: grid;
+align-items: center;
+justify-items: center;  
+width: 100%;
+height: 600px;
+background: url('img/rgb2.PNG');
+margin-bottom: 200px;
+}
+.about-content{
+height: 80%;
+width: 100%;
+display: grid;
+grid-template-columns: 50% 50%;
+justify-items: center;
+align-items: center;
+}
+.about-content .img img{
+width: 600px;
+height: 400px;
+}
+.about-content .texto{
+width: 70%;  
+}
+.about-content .texto h4{
+color: #37c39c;
+margin-bottom: 20px;
+font-weight: 800;
+font-family: 'Outfit', sans-serif;
+}
+.about-content .texto h2{
+margin-bottom: 10px;
+font-weight: 800;
+font-family: 'Outfit', sans-serif;  
+}
+.about-content .texto p{
+font-size: 14px;
+margin-bottom: 20px;
+font-weight: 600;
+font-family: 'Manrope', sans-serif;
+line-height: 20px;
+color: #7a8481; 
+margin-top: 20px;
+}
+.about-content .texto button{
+width: 120px;
+height: 40px;
+background: #37c39c;
+margin-right: 20px;
+font-size: 12px;
+font-weight: 800;
+font-family: 'Manrope', sans-serif;
+color: #fff;
+border-radius: 2px; 
+margin-top: 20px;
+}
+.about-content .texto button:hover{
+border: 1px solid #37c39c;
+background: none;
+color: #37c39c;
+transition: .1s ease-in-out;
+}
+.about-content .texto .check-text{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+.about-content .texto .check-text .checkbox{
+display: flex;
+align-items: center;
+}
+.about-content .texto .check-text .checkbox span{
+color: #000;
+font-weight: 800;
+font-family: 'Manrope', sans-serif;
+font-size: 12px;
+white-space: nowrap;
+margin-left: 5px;
+}
+input[type="checkbox"]{
+accent-color: #37c39c;
+}
