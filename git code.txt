@@ -1,0 +1,5 @@
+git status
+git add nome_do_arquivo
+git add .
+git commit -m "Mensagem descritiva sobre a alteração"
+git push origin nome_da_branch
